@@ -562,8 +562,7 @@ def auto_load_data():
                         continue  # Skip rows with invalid time values
             
             csv_file_loaded = True
-            app.logger.info(f"Auto-loaded CSV with {len(csv_error_data)} error records")
-            
+            app.logger.info(f"Auto-loaded CSV with {len(csv_error_data)} error records")            
         except Exception as e:
             app.logger.error(f"Failed to auto-load CSV: {e}")
 
