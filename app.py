@@ -19,7 +19,7 @@ SUPPORTED_AUDIO_EXTENSIONS = ('.mp3', '.wav', '.ogg')
 # Global variable to store parsed log data
 parsed_transcription_data = {}
 
-# Global variables for CSV error labeling
+# Global variables for CSV error labeling testing
 csv_error_data = []
 csv_file_loaded = False
 
