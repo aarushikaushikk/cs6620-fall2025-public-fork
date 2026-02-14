@@ -1,0 +1,19 @@
+# Git
+.git
+.github
+
+# Python cache / compiled
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Requested exclusions
+README.md
+.dockerignore
+Dockerfile
