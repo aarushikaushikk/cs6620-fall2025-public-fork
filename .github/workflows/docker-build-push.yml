@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
@@ -27,9 +27,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/cs6620-app:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/cs6620-app:${{ github.sha }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cs6620-app:latest
           labels: |
             org.opencontainers.image.source=${{ github.event.repository.html_url }}
             org.opencontainers.image.revision=${{ github.sha }}
